@@ -24,7 +24,7 @@ jobs:
     - name: build & push docker image
       uses: elgohr/Publish-Docker-Github-Action@master
       with:
-        name: local-image
+        name: AgileByte/updown-status-page/image
         registry: docker.pkg.github.com
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
