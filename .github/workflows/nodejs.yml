@@ -24,7 +24,7 @@ jobs:
     - name: build & push docker image
       uses: elgohr/Publish-Docker-Github-Action@master
       with:
-        name: ${{ GITHUB_REPOSITORY }}/image
+        name: local-image
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         registry: docker.pkg.github.com
